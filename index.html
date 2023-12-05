@@ -271,7 +271,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  $5.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -282,7 +282,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  $14.95
+                  ₦2900
                 </p>
               </div><!-- Menu Item -->
 
@@ -293,7 +293,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  $8.95
+                  ₦3000
                 </p>
               </div><!-- Menu Item -->
 
@@ -304,7 +304,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -315,7 +315,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -382,7 +382,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -393,7 +393,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -460,7 +460,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -471,7 +471,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦1080
                 </p>
               </div><!-- Menu Item -->
 
@@ -482,7 +482,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦9.95
+                  ₦1900
                 </p>
               </div><!-- Menu Item -->
 
@@ -505,7 +505,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦5.95
+                  ₦5400
                 </p>
               </div><!-- Menu Item -->
 
@@ -516,7 +516,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦14.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -527,7 +527,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦8.95
+                  ₦1080
                 </p>
               </div><!-- Menu Item -->
 
@@ -538,7 +538,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦2800
                 </p>
               </div><!-- Menu Item -->
 
@@ -549,7 +549,7 @@
                   Lorem, deren, trataro, filede, nerada
                 </p>
                 <p class="price">
-                  ₦12.95
+                  ₦4000
                 </p>
               </div><!-- Menu Item -->
 
@@ -817,7 +817,13 @@
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <form  id="bb" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <script>
+                document.getElementById("bb").addEventListener('submit', (e)=>{
+                    e.preventDefault();
+                    window.location.href = 'success.html'
+                })
+              </script>
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -912,7 +918,7 @@
               <i class="icon bi bi-map flex-shrink-0"></i>
               <div>
                 <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Katsina State</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -951,7 +957,13 @@
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <form id="book-form" class="php-email-form p-3 p-md-4">
+          <script>
+            document.getElementById("book-form").addEventListener('submit', (e)=>{
+                e.preventDefault();
+                alert("message was sent successfully")
+            })
+          </script>
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -989,8 +1001,8 @@
           <div>
             <h4>Address</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
+             Katsina State <br>
+              Nigeria<br>
             </p>
           </div>
 
@@ -1001,8 +1013,8 @@
           <div>
             <h4>Reservations</h4>
             <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> +09030051965<br>
+              <strong>Email:</strong> abbaisah@example.com<br>
             </p>
           </div>
         </div>
